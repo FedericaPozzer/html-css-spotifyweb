@@ -893,3 +893,23 @@
         margin-left: calc((100% / 12) * 12);
     }
 }
+
+/* SPACING */
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.m-t-05 {
+    margin-top: .5rem;
+}
+
+/* list style & text decoration */
+ ul {
+    list-style: none;
+ }
+
+ ul > li > a {
+    text-decoration: none;
+    color: inherit
+ }

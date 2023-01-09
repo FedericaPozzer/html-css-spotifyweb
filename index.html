@@ -9,6 +9,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
+    <!-- Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/12bool.css">
@@ -16,7 +24,43 @@
 </head>
 <body>
     <section class="top-content d-flex">
-        <section class="sidebar"></section>
+        <section class="sidebar d-flex">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="logo" id="logo-basic">
+                <img src="./img/logo-small.svg" alt="logo" id="logo-xs">
+            </div>
+
+            <div class="m-t-1">
+                <ul>
+                    <li><a href="#">&hearts; <span>Home</span></a></li> 
+                    <li><a href="#">&hearts; <span>Cerca</span></a></li>
+                    <li><a href="#">&hearts; <span>La tua libreria</span></a></li>
+                </ul>
+            </div>
+
+            <div class="playlist m-t-1">
+                <h2>PLAYLIST</h2>
+                <button>+</button> 
+                <span>Crea Playlist</span>
+                <ul>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer d-flex">
+                <div class="bot">&hearts; <span>Installa app</span></div>
+                <div class="john d-flex m-t-05">
+                    <img src="./img/profile.svg" alt="JohnDoe">
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </section>
 
         <section class="main-content">
             <header></header>
