@@ -31,7 +31,8 @@ footer {
 
     font-size: .8rem;
 
-    /* background-color: #000000; */
+    /* background-color: #000000;
+    color: #a3a3a3; */
 
     /* debug */
         background-color: violet;
@@ -50,21 +51,20 @@ footer {
 header {
     height: 5rem;
     width: calc(100% - 15rem);
-    background-color: aquamarine;
     position: fixed;
     z-index: 1;
 
-    /* justify-content: right; */
-
-    /* background-color: #080b12; */
+    /* background-color: rgb(8, 11, 18);
+    filter: opacity(0.9); */
 
     /* debug */
+        background-color: aquamarine;
         border: 1px solid black;
 }
 
 main {
-    margin-top: 5rem;
-    /* padding-top: 5rem; */
+    /* margin-top: 5rem; */
+    padding-top: 5rem;
     height: calc(100vh - 10rem);
     overflow: auto;
 
@@ -118,6 +118,15 @@ main {
     background-color: black;
     border-radius: 50%;
     margin-right: .5rem;
+}
+
+.sidebar .add-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: #a3a3a3;
+    padding: 0;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 /* HEADER */
