@@ -54,3 +54,28 @@ main {
     /* debug */
         border: 1px solid black;
 }
+
+/* MEDIA QUEARY */
+
+/* LG */
+/* @media screen and (max-width: 992px)*/
+
+/* MD */
+/* @media screen and (max-width: 768px) */
+
+/* SM */
+/* @media screen and (max-width: 600px) */
+
+/* XS */
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 3rem;
+    }
+     .main-content {
+        width: calc(100% - 3rem);
+     }
+
+     header {
+        width: calc(100% - 3rem);
+     }
+}
