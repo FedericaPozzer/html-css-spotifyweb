@@ -11,6 +11,9 @@
 footer {
     min-height: 5rem;
     margin-top: auto;
+    padding: 0 .5rem 0 .5rem;
+
+    justify-content: space-between;
 
     /* background-color: #282828; */
 
@@ -22,7 +25,7 @@ footer {
 .sidebar {
     min-height: calc(100vh - 5rem);
     width: 15rem;
-    overflow: auto;
+    /* overflow: auto; */
 
     flex-direction: column;
 
@@ -93,6 +96,11 @@ main {
     /* font-size: .8rem; */
 }
 
+.sidebar .playlist {
+    height: 60%;
+    overflow: auto;
+}
+
 .bot { /* CHANGE THIS !!! */
     border-bottom: 1px solid black;
 }
@@ -128,13 +136,40 @@ main {
     background-color: pink;
 }
 
+/* FOOTER */
+
+footer > div {
+    align-items: center;
+}
+
+footer img {
+    height: 2.5rem;
+    aspect-ratio: 1;
+    margin-right: .5rem;
+}
+
+.footer-song > i {  /* CHECK THIS */
+    flex-wrap: wrap;
+
+}
+
+.footer-player {
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
 /* MEDIA QUEARY */
 
 /* MD */
 /* @media screen and (max-width: 768px) */
 
 /* SM */
-/* @media screen and (max-width: 600px) */
+/* @media screen and (max-width: 600px) {
+   
+} */
 
 /* XS */
 @media screen and (max-width: 480px) {
