@@ -51,6 +51,8 @@ header {
     position: fixed;
     z-index: 1;
 
+    /* justify-content: right; */
+
     /* background-color: #080b12; */
 
     /* debug */
@@ -107,6 +109,23 @@ main {
     background-color: black;
     border-radius: 50%;
     margin-right: .5rem;
+}
+
+/* HEADER */
+
+.header-btn {
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: .5rem;
+    background-color: transparent;
+
+    float: right;
+
+    /* debug */
+    background-color: pink;
 }
 
 /* MEDIA QUEARY */
