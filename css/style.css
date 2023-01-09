@@ -136,6 +136,24 @@ main {
     background-color: pink;
 }
 
+/* MAIN */
+
+.main-menu {
+    width: 60%;
+    margin: auto;
+}
+
+.main-menu > ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-menu li {
+    margin: 1rem;
+}
+
+
+
 /* FOOTER */
 
 footer > div {
@@ -164,12 +182,19 @@ footer img {
 /* MEDIA QUEARY */
 
 /* MD */
-/* @media screen and (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .main-menu {
+        width: 100%;
+        font-size: .8rem;
+    }
+}
 
 /* SM */
-/* @media screen and (max-width: 600px) {
-   
-} */
+@media screen and (max-width: 600px) {
+    .main-menu {
+        font-size: .7rem;
+    }
+}
 
 /* XS */
 @media screen and (max-width: 480px) {
@@ -192,6 +217,11 @@ footer img {
 
      .sidebar #logo-xs {
         display: block;
+    }
+
+    /* main */
+     .main-menu {
+        font-size: .6rem;
     }
 
 }
