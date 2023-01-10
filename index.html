@@ -82,7 +82,7 @@
             </header>
 
             <main>
-                <div class="main-menu">
+                <nav class="main-menu">
                     <ul class="d-flex">
                         <li><a href="#">IN EVIDENZA</a></li>
                         <li><a href="#">PODCAST</a></li>
@@ -91,7 +91,7 @@
                         <li><a href="#">NUOVE USCITE</a></li>
                         <li><a href="#">SCOPRI</a></li>
                     </ul>
-                </div>
+                </nav>
             
                 <div class="main-main">
 
@@ -179,39 +179,43 @@
         <div class="footer-song d-flex">
             <div class="d-flex m-r-15">
                 <img src="./img/sinister.jpeg" alt="Sinister">
-                <div class="">
-                    <h5>Sinister</h5>
+                <div class="song-details d-flex">
+                    <h5 class="c-w">Sinister</h5>
                     <span>Brano Nome</span>
                 </div>
             </div>
  
-            <div class="d-flex">
-                <div>&hearts;</div>
-                <div>&hearts;</div>
+            <div class="footer-song-icons d-flex">
+                <div><i class="fa-regular fa-heart m-l-1"></i></div>
+                <div><i class="fa-regular fa-folder m-l-1"></i></div>
             </div>
         </div>
 
         <div class="footer-player d-flex">
-            <div class="d-flex">
-                <div>&hearts;</div>
-                <div>&hearts;</div>
-                <div>&hearts;</div>
-                <div>&hearts;</div>
-                <div>&hearts;</div>
+            <div class="player-icons d-flex">
+                <i class="fa-solid fa-shuffle c-w"></i>
+                <i class="fa-solid fa-backward-step c-w"></i>
+                <i class="fa-regular fa-circle-play c-w"></i>
+                <i class="fa-solid fa-forward-step c-w"></i>
+                <i class="fa-solid fa-arrow-rotate-right c-w"></i>
             </div>
 
-            <div class="d-flex">
-                <span>0:25</span>
-                <div>__________________________________________</div>
-                <span>4:35</span>
+            <div class="player-bar d-flex">
+                <span class="c-w">0:25</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="c-w">4:35</span>
             </div>
         </div>
 
-        <div class="d-flex">
-            <div>&hearts;</div>
-            <div>&hearts;</div>
-            <div>&hearts;</div>
-            <div>_______</div>
+        <div class="sound-bar d-flex">
+            <i class="fa-solid fa-list-ul c-w"></i>
+            <i class="fa-solid fa-display c-w"></i>
+            <i class="fa-solid fa-volume-high c-w"></i>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
         </div>
     </footer>
     

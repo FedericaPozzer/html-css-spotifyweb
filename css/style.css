@@ -131,6 +131,104 @@ header {
 }
 
 
+/******************************
+FOOTER
+******************************/
+
+footer {
+    min-height: 5rem;
+    margin-top: auto;
+    padding: 0 .5rem 0 .5rem;
+
+    justify-content: space-between;
+
+    background-color: #282828;
+    color: #a3a3a3;
+
+    /* debug */
+    /* background-color: yellowgreen;
+    border: 1px solid black; */
+}
+
+footer > div {
+    align-items: center;
+}
+
+footer img {
+    height: 2.5rem;
+    aspect-ratio: 1;
+    margin-right: .5rem;
+}
+
+.song-details {
+    flex-direction: column;
+    line-height: .8rem;
+    align-self: center;
+}
+
+.footer-song span {
+    font-size: .6rem;
+}
+
+.footer-song-icons {
+    flex-wrap: wrap;
+}
+
+.footer-player {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-player i {
+    margin: 0 .8rem;
+    font-size: 1.1rem;
+}
+
+.footer-player .fa-regular {
+    font-size: 1.6rem;
+}
+
+.player-bar span {
+    font-size: .5rem;
+    font-weight: 600;
+}
+
+.player-icons,
+.player-bar,
+.sound-bar {
+    align-items: center;
+}
+
+.progress-bar {
+    height: .3rem;
+    border-radius: .3rem;
+    background-color: #5f5c5c;
+    margin: .5rem 1rem;
+}
+
+.progress {
+    display: block;
+    width: 30%;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a3a3a3;
+}
+
+.player-bar .progress-bar {
+    width: 25rem;
+}
+
+.sound-bar .progress-bar {
+    width: 8rem;
+    margin-right: .3rem;
+}
+
+.sound-bar i {
+    font-size: .9rem;
+    margin: 0 .4rem;
+}
+
+
 
 
 
@@ -145,19 +243,7 @@ header {
         border: 1px solid black;
 }
 
-footer {
-    min-height: 5rem;
-    margin-top: auto;
-    padding: 0 .5rem 0 .5rem;
 
-    justify-content: space-between;
-
-    /* background-color: #282828; */
-
-    /* debug */
-        background-color: yellowgreen;
-        border: 1px solid black;
-}
 
 
 .main-content {
@@ -238,26 +324,6 @@ main span {
 }
 
 
-/* FOOTER */
-
-footer > div {
-    align-items: center;
-}
-
-footer img {
-    height: 2.5rem;
-    aspect-ratio: 1;
-    margin-right: .5rem;
-}
-
-.footer-song > i {  /* CHECK THIS */
-    flex-wrap: wrap;
-}
-
-.footer-player {
-    flex-direction: column;
-    justify-content: center;
-}
 
 
 
