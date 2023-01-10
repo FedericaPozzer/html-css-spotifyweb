@@ -24,24 +24,34 @@
 </head>
 <body>
     <section class="top-content d-flex">
-        <section class="sidebar d-flex">
+        <nav class="sidebar d-flex">
             <div class="logo">
                 <img src="./img/logo.svg" alt="logo" id="logo-basic">
                 <img src="./img/logo-small.svg" alt="logo" id="logo-xs">
             </div>
 
-            <div class="m-t-1">
+            <div class="navbar-menu m-t-1">
                 <ul>
-                    <li><a href="#">&hearts; <span>Home</span></a></li> 
-                    <li><a href="#">&hearts; <span>Cerca</span></a></li>
-                    <li><a href="#">&hearts; <span>La tua libreria</span></a></li>
+                    <li>
+                        <a class="d-flex bar-l" href="#"><img src="./img/home.svg" alt="home"> <span class="bold c-w">Home</span></a>
+                    </li> 
+
+                    <li>
+                        <a class="d-flex" href="#"><img src="./img/search.svg" alt="search"> <span>Cerca</span></a>
+                    </li>
+
+                    <li>
+                        <a class="d-flex" href="#"><img src="./img/libreria.svg" alt="library"> <span>La tua libreria</span></a>
+                    </li>
                 </ul>
             </div>
 
             <div class="playlist m-t-1">
-                <h4>PLAYLIST</h4>
-                <button class="btn add-btn">&plus;</button> 
-                <span>Crea Playlist</span>
+                <h4 class="c-w">PLAYLIST</h4>
+                <div class="add-playlist d-flex m-t-05">
+                    <button class="btn add-btn">&plus;</button>
+                    <span class="m-l-05">Crea Playlist</span>
+                </div>
                 <ul>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
@@ -54,13 +64,17 @@
             </div>
 
             <div class="sidebar-footer d-flex">
-                <div class="bot">&hearts; <span>Installa app</span></div>
+                <div class="doe-spacing d-flex">
+                    <img src="./img/download.svg" alt="download">
+                    <span>Installa app</span>
+                </div>
+
                 <div class="john d-flex m-t-05">
                     <img src="./img/profile.svg" alt="JohnDoe">
-                    <h4>John Doe</h4>
+                    <h4 class="c-w">John Doe</h4>
                 </div>
             </div>
-        </section>
+        </nav>
 
         <section class="main-content">
             <header>

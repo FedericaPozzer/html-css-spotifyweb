@@ -1,3 +1,140 @@
+/******************************
+SIDEBAR 
+******************************/
+
+.sidebar {
+    min-height: calc(100vh - 5rem);
+    width: 15rem;
+    font-size: .8rem;
+
+    flex-direction: column;
+
+    /* background-color: #000000;
+    color: #a3a3a3; */
+
+    /* debug */
+    background-color: violet;
+    border: 1px solid black;
+}
+
+.sidebar .logo img {
+    height: 2.5rem;
+    margin-top: .5rem;
+}
+
+.sidebar #logo-xs {
+    display: none;
+}
+
+.sidebar > * {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.navbar-menu img {
+    height: 1.5rem;
+}
+
+.bar-l {
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+    border-left: .2rem solid #adff2f;
+}
+
+.sidebar .playlist {
+    height: 60%;
+    overflow: auto;
+}
+
+.sidebar .add-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: #a3a3a3;
+    padding: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.sidebar ul>li {
+    margin: .5rem 0;
+    font-size: .7rem;
+}
+
+.sidebar-footer img {
+    height: .8rem;
+    margin-right: .4rem;
+}
+
+.doe-spacing {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.sidebar-footer {
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: .5rem;
+}
+
+.sidebar-footer > div {
+    cursor: pointer;
+}
+
+.john>img {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.add-playlist,
+.navbar-menu a,
+.doe-spacing,
+.john {
+    align-items: center;
+}
+
+
+/******************************
+HEADER
+******************************/
+
+header {
+    height: 5rem;
+    width: calc(100% - 15rem);
+    position: fixed;
+    z-index: 1;
+
+    /* background-color: #080b12;
+    filter: opacity(0.9); */
+
+    /* debug */
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.header-btn {
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: .5rem;
+    background-color: transparent;
+    padding: .5rem 1.8rem;
+
+    float: right;
+
+    /* debug */
+    background-color: pink;
+}
+
+
+
+
+
+
 /* LAYOUT FIRST */
 
 .top-content {
@@ -22,22 +159,6 @@ footer {
         border: 1px solid black;
 }
 
-.sidebar {
-    min-height: calc(100vh - 5rem);
-    width: 15rem;
-    /* overflow: auto; */
-
-    flex-direction: column;
-
-    font-size: .8rem;
-
-    /* background-color: #000000;
-    color: #a3a3a3; */
-
-    /* debug */
-        background-color: violet;
-        border: 1px solid black;
-}
 
 .main-content {
     height: calc(100vh - 5rem);
@@ -48,24 +169,13 @@ footer {
         border: 1px solid black;
 }
 
-header {
-    height: 5rem;
-    width: calc(100% - 15rem);
-    position: fixed;
-    z-index: 1;
 
-    /* background-color: rgb(8, 11, 18);
-    filter: opacity(0.9); */
-
-    /* debug */
-        background-color: aquamarine;
-        border: 1px solid black;
-}
 
 main {
     /* margin-top: 5rem; */
     padding-top: 5rem;
     height: calc(100vh - 10rem);
+    /* height: 100%; nope */
     overflow: auto;
 
     /* color: #ffffff;
@@ -76,75 +186,10 @@ main {
         border: 1px solid black;
 }
 
-/* SIDEBAR */
 
-.sidebar .logo img {
-    height: 3rem;
-    margin-top: .5rem;
-}
 
-.sidebar #logo-xs {
-    display: none;
-}
 
-.sidebar > * {
-    margin-left: .5rem;
-    margin-right: .5rem;
-}
 
-.sidebar ul > li {
-    margin: .5rem 0;
-    /* font-size: .8rem; */
-}
-
-.sidebar .playlist {
-    height: 60%;
-    overflow: auto;
-}
-
-.bot { /* CHANGE THIS !!! */
-    border-bottom: 1px solid black;
-}
-
-.sidebar-footer {
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: .5rem;
-}
-
-.john > img {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: black;
-    border-radius: 50%;
-    margin-right: .5rem;
-}
-
-.sidebar .add-btn {
-    width: 2rem;
-    height: 2rem;
-    background-color: #a3a3a3;
-    padding: 0;
-    font-size: 1.7rem;
-    font-weight: 400;
-}
-
-/* HEADER */
-
-.header-btn {
-    border: 1px solid #ffffff;
-    border-radius: 1rem;
-    font-size: .7rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-right: .5rem;
-    background-color: transparent;
-
-    float: right;
-
-    /* debug */
-    background-color: pink;
-}
 
 /* MAIN */
 
@@ -237,30 +282,41 @@ footer img {
 
 /* XS */
 @media screen and (max-width: 480px) {
+   
+    /* Sidebar */
     .sidebar {
         width: 3rem;
+        align-items: center;
     }
-     .main-content {
-        width: calc(100% - 3rem);
-     }
 
-     header {
-        width: calc(100% - 3rem);
-     }
-
-     .sidebar #logo-basic,
-     .sidebar span,
-     .sidebar .playlist {
+    .sidebar #logo-basic,
+    .sidebar span,
+    .sidebar .playlist,
+    .sidebar h4 {
         display: none;
-     }
+    }
 
-     .sidebar #logo-xs {
+    .sidebar .bar-l {
+        border-left: none;
+    }
+
+    .sidebar #logo-xs {
         display: block;
     }
 
+    /* header */
+
+    header {
+        width: calc(100% - 3rem);
+    }
+
     /* main */
-     .main-menu {
+    .main-menu {
         font-size: .6rem;
+    }
+
+    .main-content {
+        width: calc(100% - 3rem);
     }
 
 }
