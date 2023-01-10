@@ -168,6 +168,7 @@ main {
 .main-menu {
     width: 60%;
     margin: auto;
+    color: #a3a3a3;
 }
 
 .main-menu>ul {
@@ -188,6 +189,8 @@ main {
 main p,
 main span {
     font-size: .8rem;
+    color: #a3a3a3;
+    margin-top: .5rem;
 }
 
 .main-main .col-2 {
@@ -323,17 +326,94 @@ footer i {
 
 /* MD */
 @media screen and (max-width: 768px) {
+    
+    /* Main */
     .main-menu {
         width: 100%;
-        font-size: .8rem;
+        font-size: .65rem;
     }
 
+    .main-main h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .main-main h3 {
+        font-size: .8rem;
+        font-weight: 800;
+    }
+
+    .main-main span,
+    .main-main p {
+        font-size: .6rem;
+    }
+
+    .main-main .col-2 {
+        min-width: calc(100% / 4);
+        padding: .5rem;
+    }
+
+    /* Footer */
+    .player-bar .progress-bar {
+        width: 15rem;
+        height: .2rem;
+    }
+    
+    .sound-bar .progress-bar {
+        width: 6rem;
+        margin-right: .3rem;
+        height: .2rem;
+    }
+
+    .footer-song img {
+        height: 2.3rem;
+    }
+
+    .footer-song i,
+    .sound-bar i {
+        font-size: .8rem;
+    }
 }
 
 /* SM */
 @media screen and (max-width: 600px) {
+    
+    /* Sidebar */
+    .sidebar {
+        width: 13rem;
+    }
+    
+    /* Main */
+    .main-content {
+        width: calc(100% - 13rem);
+    }
+
     .main-menu {
         font-size: .7rem;
+    }
+
+    .main-main .col-2 {
+        min-width: calc(100% / 2);
+        padding: .5rem;
+    }
+
+    /* Footer */
+    .player-bar .progress-bar {
+        width: 9rem;
+    }
+    
+    .sound-bar .progress-bar {
+        width: 5rem;
+        margin-right: .1rem;
+        margin-left: .1rem;
+    }
+    
+    .footer-song img {
+        height: 2.1rem;
+    }
+    
+    .footer-song-icons {
+        flex-direction: column;
     }
 }
 
@@ -342,7 +422,7 @@ footer i {
    
     /* Sidebar */
     .sidebar {
-        width: 3rem;
+        width: 3.5rem;
         align-items: center;
     }
 
@@ -351,6 +431,11 @@ footer i {
     .sidebar .playlist,
     .sidebar h4 {
         display: none;
+    }
+
+    .doe-spacing {
+        border-bottom: none;
+        margin-left: .3rem;
     }
 
     .sidebar .bar-l {
@@ -373,8 +458,42 @@ footer i {
     }
 
     .main-content {
-        width: calc(100% - 3rem);
+        width: calc(100% - 3.5rem);
     }
 
+
+    /* Footer */
+    .player-bar .progress-bar {
+        width: 7rem;
+    }
+    
+    .sound-bar .progress-bar {
+        width: 4rem;
+        margin-right: .1rem;
+        margin-left: .1rem;
+    }
+    
+    .footer-song img {
+        height: 1.8rem;
+    }
+    
+    .player-icons > i {
+        margin: .1rem .5rem;
+        font-size: .8rem;
+    }
+
+    .sound-bar i,
+    .footer-song i {
+        font-size: .7rem;
+    }
+
+    .footer-song i {
+        margin-left: 0;
+    }
+
+    .footer-song > div {
+        margin-right: .8rem;
+    }
 }
+
 
