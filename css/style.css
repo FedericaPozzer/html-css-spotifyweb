@@ -1,3 +1,11 @@
+.top-content {
+    height: calc(100vh - 5rem);
+
+    /* debug */
+    /* background-color: yellowgreen;
+    border: 1px solid black; */
+}
+
 /******************************
 SIDEBAR 
 ******************************/
@@ -9,12 +17,12 @@ SIDEBAR
 
     flex-direction: column;
 
-    /* background-color: #000000;
-    color: #a3a3a3; */
+    background-color: #000000;
+    color: #a3a3a3;
 
     /* debug */
-    background-color: violet;
-    border: 1px solid black;
+    /* background-color: violet;
+    border: 1px solid black; */
 }
 
 .sidebar .logo img {
@@ -106,12 +114,12 @@ header {
     position: fixed;
     z-index: 1;
 
-    /* background-color: #080b12;
-    filter: opacity(0.9); */
+    background-color: #080b12;
+    filter: opacity(0.9);
 
     /* debug */
-    background-color: aquamarine;
-    border: 1px solid black;
+    /* background-color: aquamarine;
+    border: 1px solid black; */
 }
 
 .header-btn {
@@ -127,7 +135,83 @@ header {
     float: right;
 
     /* debug */
-    background-color: pink;
+    /* background-color: pink; */
+}
+
+
+/******************************
+MAIN
+******************************/
+
+.main-content {
+    height: calc(100vh - 5rem);
+    width: calc(100% - 15rem);
+
+    /* debug */
+    /* border: 1px solid black;
+    background-color: violet; */
+}
+
+main {
+    padding-top: 5rem;
+    height: 100%;
+    overflow: auto;
+
+    color: #ffffff;
+    background-color: #141922;
+
+    /* debug */
+    /* background-color: antiquewhite;
+    border: 1px solid black; */
+}
+
+.main-menu {
+    width: 60%;
+    margin: auto;
+}
+
+.main-menu>ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-menu li {
+    margin: 1rem;
+}
+
+.bar-b { /* FIX THIS */
+    border-bottom: .2rem solid #adff2f;
+}
+
+/* MAIN Main */
+
+main p,
+main span {
+    font-size: .8rem;
+}
+
+.main-main .col-2 {
+    padding: 1rem;
+    min-width: 200px;
+    /* NOPE K! come trasformo le col?*/
+    aspect-ratio: 1;
+
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.main-main h2,
+.main-main p {
+    margin-left: 1rem;
+}
+
+.main-main img {
+    margin-bottom: 1rem;
+}
+
+.popular-artists img {
+    border-radius: 50%;
 }
 
 
@@ -204,6 +288,7 @@ footer img {
     border-radius: .3rem;
     background-color: #5f5c5c;
     margin: .5rem 1rem;
+    cursor: pointer;
 }
 
 .progress {
@@ -228,103 +313,9 @@ footer img {
     margin: 0 .4rem;
 }
 
-
-
-
-
-
-/* LAYOUT FIRST */
-
-.top-content {
-    height: calc(100vh - 5rem);
-
-    /* debug */
-        background-color: yellowgreen;
-        border: 1px solid black;
+footer i {
+    cursor: pointer;
 }
-
-
-
-
-.main-content {
-    height: calc(100vh - 5rem);
-    width: calc(100% - 15rem);
-    background-color: violet;
-
-    /* debug */
-        border: 1px solid black;
-}
-
-
-
-main {
-    /* margin-top: 5rem; */
-    padding-top: 5rem;
-    height: calc(100vh - 10rem);
-    /* height: 100%; nope */
-    overflow: auto;
-
-    /* color: #ffffff;
-    background-color: #141922; */
-
-    /* debug */
-        background-color: antiquewhite;
-        border: 1px solid black;
-}
-
-
-
-
-
-
-/* MAIN */
-
-.main-menu {
-    width: 60%;
-    margin: auto;
-}
-
-.main-menu > ul {
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.main-menu li {
-    margin: 1rem;
-}
-
-/* MAIN Main */
-
-main p,
-main span {
-    font-size: .8rem;
-}
-
-.main-main .col-2 {
-    padding: 1rem;
-
-    min-width: 200px; /* NOPE K! come trasformo le col?*/
-    aspect-ratio: 1;
-
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-main h2,
-.main-main p {
-    margin-left: 1rem;
-}
-
-.main-main img {
-    margin-bottom: 1rem;
-}
-
-.popular-artists img {
-    border-radius: 50%;
-}
-
-
-
 
 
 
