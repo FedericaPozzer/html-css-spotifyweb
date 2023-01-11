@@ -202,6 +202,8 @@ main span {
     flex-direction: column;
     /* align-items: center; */
     text-align: center;
+
+     cursor: pointer;
 }
 
 .main-main h2,
@@ -383,14 +385,22 @@ footer i {
 
 /* HOVER SECTION */
 
-    /* Main */
+    /* Main images */
     .img-band:hover i {
         display: block;
     }
 
+    .img-band:hover {
+        filter: opacity(.5);
+    }
 
+    /* Header button */
+    header > button:hover {
+        scale: 1.3;
+        margin-right: 2rem;
+    }
 
-
+    
 
 
 /* ************************************************* */
