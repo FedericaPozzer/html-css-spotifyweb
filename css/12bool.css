@@ -972,3 +972,12 @@
 .c-w {
     color: #ffffff;
 }
+
+/* Position */
+ .relative {
+    position: relative;
+ }
+
+ .absolute {
+    position: absolute;
+ }

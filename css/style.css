@@ -209,12 +209,69 @@ main span {
     margin-left: 1rem;
 }
 
-.main-main img {
-    margin-bottom: 1rem;
+/* MAIN images */
+
+.img-band i {
+    font-size: 4rem;
 }
 
-.popular-artists img {
+.img-band {
+    min-width: 100%;
+    aspect-ratio: 1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 1.5rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.metal-img {
+    background-image: url(../img/metal_lifting.jpg);
+}
+
+.stranger-img {
+    background-image: url(../img/stranger.jpeg);
+}
+
+.aquiet-img {
+    background-image: url(../img/aquietplace.jpeg);
+}
+
+.split-img {
+    background-image: url(../img/split.jpeg);
+}
+
+.wellness-img {
+    background-image: url(../img/cure.jpeg);
+}
+
+.sinister-img {
+    background-image: url(../img/sinister.jpeg);
+}
+
+.release-img {
+    background-image: url(../img/radar.jpeg);
+}
+
+.dailymix-img {
+    background-image: url(../img/mixdaily.jpeg);
+}
+
+.lana-img {
+    background-image: url(../img/youg.jpeg);
     border-radius: 50%;
+}
+
+.einaudi-img {
+    background-image: url(../img/einaudi.jpeg);
+    border-radius: 50%;
+}
+
+.img-band i {
+    display: none;
 }
 
 
@@ -320,6 +377,23 @@ footer i {
     cursor: pointer;
 }
 
+
+/* ************************************************* */
+
+
+/* HOVER SECTION */
+
+    /* Main */
+    .img-band:hover i {
+        display: block;
+    }
+
+
+
+
+
+
+/* ************************************************* */
 
 
 /* MEDIA QUEARY */
@@ -495,5 +569,9 @@ footer i {
         margin-right: .8rem;
     }
 }
+
+
+/* ************************************************* */
+
 
 
