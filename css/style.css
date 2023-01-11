@@ -250,50 +250,12 @@ main span {
     justify-content: center;
 }
 
-.metal-img {
-    background-image: url(../img/metal_lifting.jpg);
-}
-
-.stranger-img {
-    background-image: url(../img/stranger.jpeg);
-}
-
-.aquiet-img {
-    background-image: url(../img/aquietplace.jpeg);
-}
-
-.split-img {
-    background-image: url(../img/split.jpeg);
-}
-
-.wellness-img {
-    background-image: url(../img/cure.jpeg);
-}
-
-.sinister-img {
-    background-image: url(../img/sinister.jpeg);
-}
-
-.release-img {
-    background-image: url(../img/radar.jpeg);
-}
-
-.dailymix-img {
-    background-image: url(../img/mixdaily.jpeg);
-}
-
-.lana-img {
-    background-image: url(../img/youg.jpeg);
-    border-radius: 50%;
-}
-
-.einaudi-img {
-    background-image: url(../img/einaudi.jpeg);
-    border-radius: 50%;
-}
-
 .img-band i {
     display: none;
+}
+
+.radius {
+    border-radius: 50%;
 }
 
 
@@ -423,12 +385,16 @@ footer i {
 /* HOVER SECTION */
 
     /* Main images */
-    .img-band:hover i {
-        display: block;
+    .img-band:hover img {
+        filter: opacity(.5);
     }
 
-    .img-band:hover {
-        filter: opacity(.5);
+    .img-band:hover i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     /* Header button */
