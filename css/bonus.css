@@ -1,0 +1,50 @@
+/* BONUS - uncomment the stylesheet link in html to see! */
+
+
+/*** 1. Nascondere le cover piuttosto che wrapparle in versione md, s, xs (stile Netflix). ***/
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+}
+
+
+/*** 2. Nascondere call-to-action quando la finestra è chiusa in altezza ***/
+
+@media screen and (max-height: 350px) {
+        header {
+            display: none;
+        }
+    }
+
+
+/*** 4. Rendere più responsive alcune parti (es. il player/footer) ***/
+
+/* Prettier footer in XS */
+
+@media screen and (max-width: 480px) {
+        .sound-bar {
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        
+        .sound-bar i {
+            margin: 0 1rem;
+            margin-bottom: -2rem;
+        }
+
+        .footer-song img {
+            display: none;
+        }
+
+        .footer-player {
+            margin-left: 2rem;
+        }
+        
+        .footer-song-icons {
+            padding-left: 1rem;
+        }
+    }
