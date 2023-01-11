@@ -629,7 +629,27 @@ footer i {
 }
 
 
+
 /* ************************************************* */
 
 
+/* BONUS */
+
+/*** 1. Nascondere le cover piuttosto che wrapparle in versione md, s, xs (stile Netflix). ***/
+
+/* @media screen and (max-width: 768px) {
+    .row {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+} */
+
+
+/*** 2. Nascondere call-to-action quando la finestra è chiusa in altezza ***/
+
+    /* @media screen and (max-height: 350px) {
+        header {
+            display: none;
+        }
+    } */
 
