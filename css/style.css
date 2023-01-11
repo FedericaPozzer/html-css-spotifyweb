@@ -653,3 +653,31 @@ footer i {
         }
     } */
 
+/*** 4. Rendere più responsive alcune parti (es. il player/footer) ***/
+
+    /* Prettier footer in XS */
+
+    /* @media screen and (max-width: 480px) {
+        .sound-bar {
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        
+        .sound-bar i {
+            margin: 0 1rem;
+            margin-bottom: -2rem;
+        }
+
+        .footer-song img {
+            display: none;
+        }
+
+        .footer-player {
+            margin-left: 2rem;
+        }
+        
+        .footer-song-icons {
+            padding-left: 1rem;
+        }
+    } */
