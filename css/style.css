@@ -103,6 +103,12 @@ SIDEBAR
     align-items: center;
 }
 
+.playlist,
+.sidebar-footer,
+.john {
+    overflow: auto;
+}
+
 
 /******************************
 HEADER
