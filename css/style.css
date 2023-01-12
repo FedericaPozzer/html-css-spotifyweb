@@ -43,6 +43,7 @@ SIDEBAR
     height: 1.5rem;
 }
 
+/* invece che usare i margini negativi potevo dare il padding a tutti i div "separatamente" e non alla sidebar */
 .bar-l {
     margin-left: -0.5rem;
     padding-left: 0.5rem;
@@ -217,14 +218,13 @@ main span {
 .main-main .col-2 {
     padding: 1rem;
     min-width: 200px;
-    /* NOPE K! come trasformo le col?*/
+    /* Siccome sono tonta non ho usato le col per il responsive :D */
     aspect-ratio: 1;
 
     flex-direction: column;
-    /* align-items: center; */
     text-align: center;
 
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .main-main h2,
@@ -239,16 +239,16 @@ main span {
 }
 
 .img-band {
-    min-width: 100%;
-    aspect-ratio: 1;
+    /* min-width: 100%;
+    aspect-ratio: 1; */
 
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 
     margin-bottom: 1.5rem;
 
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .img-band i {
